@@ -6,8 +6,7 @@
 level00@SnowCrash:~$ find / -path /proc -prune -o -user flag00 -print 2> /dev/null
 /usr/sbin/john
 /rofs/usr/sbin/john
-```
-```sh
+
 level00@SnowCrash:~$ cat /usr/sbin/john
 cdiiddwpgswtgt
 ```
@@ -135,7 +134,7 @@ $ echo '[x {${exec(getflag)}}]' > /tmp/test && ./level06 /tmp/test
 
 
 ```c
-    asprintf(&v1, "/bin/echo %s ");
+asprintf(&v1, "/bin/echo %s ");
 ```
 
 ```sh
