@@ -221,4 +221,16 @@ $ cat /tmp/flag
 	g1qKMiRpXf53AWhDaU7FEkczr
 </details>
 
+# Level 13
+
+gdb level13
+
+breakpoint in main to
+	0x0804859a <+14>:	3d 92 10 00 00	cmp    $0x1092,%eax
+	set $eax=0x1092
+
+<details>
+	<summary>Flag:</summary>
+	2A31L79asukciNyi8uppkEuSx 
+</details>
 
