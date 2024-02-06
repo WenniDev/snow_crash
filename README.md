@@ -234,3 +234,29 @@ breakpoint in main to
 	2A31L79asukciNyi8uppkEuSx 
 </details>
 
+# Level 14
+
+gdb /bin/getflag
+
+bypass ptrace
+
+```gdb
+catch syscall ptrace
+commands 1
+set ($eax) = 0
+continue
+end
+
+b *0x8048afd (go to getuid call)
+p $eax (= 2014) (user level14)
+set $eax=3014 (set to flag14)
+continu
+```
+
+<details>
+	<summary>Flag:</summary>
+	7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+</details>
+
+
+
