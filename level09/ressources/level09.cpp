@@ -2,10 +2,10 @@
 #include <fstream>
 #include <string>
 
-int main() {
-    std::ifstream file("token");
+int main(int ac, char **av) {
     std::string line;
-	std::string res;
+	std::string res; 
+    std::ifstream file(av[1]);
 
     if (file.is_open()) {
         while (std::getline(file, line)) {
