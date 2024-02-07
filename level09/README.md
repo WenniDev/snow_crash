@@ -1,5 +1,7 @@
 # Level 09
-We have the usually files level09 and token.
+
+We have the usual files: level09 and token.
+
 ```sh
 $ ls -l
 total 12
@@ -8,6 +10,7 @@ total 12
 ```
 
 This time we can read the content of `token` but... it does not help..
+
 ```sh
 $ cat token
 f4kmm6p|=�p�n��DB�Du{��
@@ -19,7 +22,8 @@ By decompiling the level09 executable we can understand that the returned value 
 $ scp -P 4243 level09@localhost:/home/user/level09/token .
 $ chmod +r ./token
 ```
-We can get the token on our pc and execute our script who's doing the inverse process. The first letter have a shift of 0, the second of -1, the third of -2...
+
+We can get the token on our pc and execute our script who's doing the reverse process. The first letter have a shift of 0, the second of -1, the third of -2...
 
 ```sh
 $ c++ level09/ressources/level09.cpp -o level09decode
