@@ -11,3 +11,5 @@ Password: ft_wandr...NDRel.L0L
 ```
 
 Here, dots are backspaces. So the final password is `ft_waNDReL0L`
+
+Now we can log as flag02 with `ft_waNDReL0L`.

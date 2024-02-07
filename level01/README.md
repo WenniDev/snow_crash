@@ -21,4 +21,4 @@ abcdefg          (?)
 
 ```
 
-Now we can connect as flag01 with `abcdefg`.
+Now we can log as flag01 with `abcdefg`.
