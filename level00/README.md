@@ -45,4 +45,6 @@ And it's a match!
 
 The content of the file dosen't work as a key, maybe it's encrypted?
 
-We can use [The Cipher Identifier](https://www.dcode.fr/cipher-identifier) and see that's a ROT Cipher of +15 and get the final password for flag00: `nottoohardhere`  
+We can use [The Cipher Identifier](https://www.dcode.fr/cipher-identifier) and see that's a ROT Cipher of +15 and get the final password: `nottoohardhere`.
+
+Now we can log as flag00 with `nottoohardhere`.

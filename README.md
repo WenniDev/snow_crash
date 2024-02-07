@@ -135,9 +135,10 @@ $ echo '[x {${exec(getflag)}}]' > /tmp/test && ./level06 /tmp/test
 We can decompile the file using [dogbotl](https://dogbolt.org) and observe this line.
 ```c
 asprintf(&v1, "/bin/echo %s ");
+return system(v1);
 ```
 
-Here 
+Here we are executing a command
 
 ```sh
 $ LOGNAME="; getflag" ./level07 
